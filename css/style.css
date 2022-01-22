@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    font-size: 16px;
+}
+
+#intro {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../images/bg-intro-desktop.png);
+    background-color: hsl(0, 100%, 74%);
+    padding: 6.25rem 0;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 1.875rem;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.left-col {
+    flex: 1;
+    margin-bottom: 3.125rem;    
+}
+
+.left-col h1 {
+    color: white;
+    font-size: 1.7rem;
+    line-height: 2.4rem;
+    margin-bottom: 1rem;
+}
+
+.left-col p {
+    color: rgba(255, 255, 255, 0.76);
+    font-size: 1rem;
+    line-height: 1.7rem;
+    font-weight: 400;
+}
+
+.right col {
+    flex: 1;
+}
+
+.right-col .top-box {
+    background-color: hsl(248, 32%, 49%);
+    color: white;
+    padding: 0.9375rem 3.625rem;
+    border-radius: 0.9375rem;
+    box-shadow: 0 7px hsla(249, 10%, 26%, 0.226);
+    margin-bottom: 1.5rem;
+}
+
+.right-col .top-box p {
+    font-size: 1rem;
+    line-height: 1.6rem;
+    color: rgba(255, 255, 255, 0.836);
+}
+
+.right-col .top-box span {
+    font-weight: 700;
+    color: white;    
+}
+
+.right-col .form-container {
+    background-color: white;
+    padding: 1.875rem;
+    border-radius: 0.9375rem;
+    box-shadow: 0 7px hsla(249, 10%, 26%, 0.226);
+}
+
+.field-group {
+    position: relative;
+}
+
+.right-col label {
+    display: none;
+}
+
+.right-col input,
+.right-col button[type=submit] {
+    width: 100%;
+    height: 3.2rem;
+    border-radius: 8px;
+    border: 1.3px solid hsla(246, 25%, 77%, 0.568);
+    padding-left: 1.25rem;
+    outline: none;
+    color: hsl(249, 10%, 26%);
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    display: block;
+}
+
+.right-col input:focus {
+    border: 1.3px solid rgba(0, 0, 0, 0.849);
+}
+
+.right-col input::placeholder {
+    color: hsl(255, 3%, 53%);
+    font-size: 0.7rem;
+    letter-spacing: 0.02rem;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+}
+
+.field-group.error input {
+    border: 1px solid hsl(0, 100%, 74%);
+}
+
+.error-icon {
+    width: 1.3rem;
+    height: 1.3rem;
+    position: absolute;
+    top: 1.25rem;
+    right: 1.5rem;
+    visibility: hidden;
+}
+
+.field-group.error .error-icon {
+    visibility: visible;
+}
+
+.error-text {
+    visibility: hidden;
+    display: block;
+    text-align: right;
+    color: hsl(0, 100%, 74%);
+    font-size: 0.7rem;
+    font-weight: 500;
+    padding-bottom: 0.5rem;
+    font-style: italic;
+}
+
+.field-group.error .error-text {
+    visibility: visible;
+}
+
+.right-col button[type=submit] {
+    cursor: pointer;
+    border: none;
+    background-color: hsl(154, 59%, 51%);
+    box-shadow: 0 4px hsl(154, 56%, 44%);
+    color: white;
+    font-weight: 500;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 0.2rem 2rem;
+}
+
+.right-col button[type=submit]:hover {
+    background-color: hsl(154, 80%, 63%);
+    cursor: pointer;
+}
+
+.right-col .form-footer {
+    margin-top: 12px;
+    margin-left: 17.95px;
+    margin-right: 17.95px;
+    color: hsl(246, 25%, 77%);
+    font-size: 0.65rem;
+    line-height: 1.2rem;
+}
+
+.right-col .form-footer span {
+    color: hsl(0, 100%, 74%);
+    font-weight: 700;    
+}
+
+@media only screen and (min-width: 1000px) {
+    #intro {
+        background-image: url(../images/bg-intro-desktop.png);
+    }
+
+    .container {
+        flex-direction: row;
+    }
+
+    .left-col {
+        text-align: left;
+        padding-right: 50px;
+    }
+
+    .left-col h1 {
+        font-size: 2.2rem;
+        line-height: 3.5rem;
+        line-height: 2.5rem;
+    }
+
+    .left-col p {
+        font-size: 1.1rem;
+    }
+
+    .right-col {
+        max-width: 500px;
+        margin-right: 30px;
+    }
+
+    .right-col .top-box p {
+        font-size: 1rem;
+    }
+
+    .right-col .top-box {
+        padding: 20px;
+    }
+
+    .right-col .form-container {
+        padding: 40px;
+
+    }
+
+    .right-col input,
+    .right-col input::placeholder {
+        font-size: 0.9rem;
+    }
+
+    .right-col .form-footer {
+        margin-top: 20px;
+        font-size: 0.65rem;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+
+    .left-col {
+        text-align: left;
+        padding-right: 20px;
+        padding-left: 55px;
+    }
+
+    .left-col h1 {
+        font-size: 2.2rem;
+        line-height: 3.5rem;
+        line-height: 2.5rem;
+    }
+
+    .left-col p {
+        font-size: 1.1rem;
+    }
+
+    .right-col {
+        max-width: 500px;
+        margin-right: 50px;
+    }
+
+    .right-col .form-container {
+        padding: 40px;
+        width: 500px;
+        
+    }
+    
+}
+
