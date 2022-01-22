@@ -166,6 +166,7 @@ html {
 .right-col button[type=submit]:hover {
     background-color: hsl(154, 80%, 63%);
     cursor: pointer;
+    transition: 0.3s;
 }
 
 .right-col .form-footer {
