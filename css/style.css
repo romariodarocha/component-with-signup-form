@@ -194,7 +194,8 @@ html {
 
     .left-col {
         text-align: left;
-        padding-right: 50px;
+        padding-right: 25px;
+        padding-left: 25px;
     }
 
     .left-col h1 {
@@ -245,9 +246,9 @@ html {
     }
 
     .left-col h1 {
-        font-size: 2.2rem;
+        font-size: 3rem;
         line-height: 3.5rem;
-        line-height: 2.5rem;
+        
     }
 
     .left-col p {
